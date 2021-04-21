@@ -1,0 +1,98 @@
+body{
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    overflow: hidden;
+}
+
+.calculator{
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    top: 3rem;
+}
+
+.numberKeys{
+    position: relative;
+    width: 14rem;
+    height: 18rem;
+    top: 12rem;
+    left: -3rem;
+}
+
+.numKey{
+    width: 4rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-top: 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    transition: 0.2s all;
+}
+
+.decimal{
+    margin-right: -4.2rem;
+}
+
+.numKey:hover{
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+.numKey:active{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.operators{
+    position: relative;
+    top: -5rem;
+    margin-left: 13rem;
+    width: 5rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.operkey{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #e26c68;
+    cursor: pointer;
+    transition: 0.2s all;
+    border-radius: 0.5rem;
+}
+
+
+.operkey:hover{
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+.operkey:active{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.display{
+    position: relative;
+    top: -33rem;
+    width: 100%;
+    height: 11rem;
+    background-color: #fafafa;
+}
+
+.displayText{
+    width: 92%;
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2rem;
+    padding-top: 4rem;
+    cursor: default;
+}
