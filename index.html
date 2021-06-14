@@ -14,35 +14,36 @@
 </head>
 
 <body>
-    <center>
-        <div class="calculator">
-            <div class="numberKeys">
-                <button class="one numKey calkey" value="1">1</button>
-                <button class="two numKey calkey" value="2">2</button>
-                <button class="three numKey calkey" value="3">3</button>
-                <button class="four numKey calkey" value="4">4</button>
-                <button class="five numKey calkey" value="5">5</button>
-                <button class="six numKey calkey" value="6">6</button>
-                <button class="seven numKey calkey" value="7">7</button>
-                <button class="eight numKey calkey" value="8">8</button>
-                <button class="nine numKey calkey" value="9">9</button>
-                <button class="zero numKey calkey" value="0">0</button>
-                <button class="decimal numKey calkey" value=".">.</button>
-            </div>
+    <center><p class="warning">Don't divide by zero</p></center>
 
-            <div class="operators">
-                <button class="operkey divison calkey" value="/">÷</button>
-                <button class="operkey multi calkey" value="*">×</button>
-                <button class="operkey minus calkey" value="-">-</button>
-                <button class="operkey plus calkey" value="+">+</button>
-                <button class="operkey equal calkey" value="=">=</button>
-            </div>
+    <div id="calculator" class="calculator">
 
-            <div class="display">
-                <input type="text" readonly="true" class="displayText" value="">
-            </div>
-        </div>
-    </center>
+      <button id="clear" class="clear calBtn">C</button>
+
+      <div id="viewer" class="viewer">0</div>
+
+      <button class="num calBtn" data-num="7">7</button>
+      <button class="num calBtn" data-num="8">8</button>
+      <button class="num calBtn" data-num="9">9</button>
+      <button data-ops="plus" class="ops calBtn">+</button>
+
+      <button class="num calBtn" data-num="4">4</button>
+      <button class="num calBtn" data-num="5">5</button>
+      <button class="num calBtn" data-num="6">6</button>
+      <button data-ops="minus" class="ops calBtn">-</button>
+
+      <button class="num calBtn" data-num="1">1</button>
+      <button class="num calBtn" data-num="2">2</button>
+      <button class="num calBtn" data-num="3">3</button>
+      <button data-ops="times" class="ops calBtn">*</button>
+
+      <button class="num calBtn" data-num="0">0</button>
+      <button class="num calBtn" data-num=".">.</button>
+      <button id="equals" class="equals calBtn" data-result="">=</button>
+      <button data-ops="divided by" class="ops calBtn">/</button>
+    </div>
+
+    <button id="reset" class="reset">Reset Universe?</button>
 
     <script type="text/javascript" src="app.js"></script>
 </body>
